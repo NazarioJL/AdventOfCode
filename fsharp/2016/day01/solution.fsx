@@ -16,7 +16,7 @@ let dirToComplex (dir: string) =
 
 let startingLocation, startingDirection = Complex(0, 0), Complex(0, 1)
 
-let input = File.ReadAllText("./input.txt")
+let input = File.ReadAllText("../../../inputs/2016/day01.txt")
 
 let locations, (_, finalLocation) =
     input.Split ", "

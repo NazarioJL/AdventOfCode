@@ -129,7 +129,7 @@ let KeyMapPart2 =
                  (Direction.Down, 0xD)
                  (Direction.Right, 0xD) ]) ]
 
-let input = File.ReadAllText("./input.txt")
+let input = File.ReadAllText("../../../inputs/2016/day02.txt")
 
 let parseInput (s: string) =
     s.Split("\n")
