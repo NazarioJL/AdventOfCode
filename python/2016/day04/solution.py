@@ -77,7 +77,8 @@ def part2(s: str) -> str | int:
     room_with_objects = [
         r
         for line in s.splitlines()
-        if decrypt((r := parse_room(line)).name, r.sector_id).find("object") > 0
+        if decrypt((r := parse_room(line)).name.replace("-", ""), r.sector_id)
+        == "northpoleobjectstorage"
     ]
 
     return room_with_objects[0].sector_id
