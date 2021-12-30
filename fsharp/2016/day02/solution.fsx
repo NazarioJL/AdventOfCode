@@ -117,7 +117,6 @@ let KeyMapPart2 =
                  (Direction.Left, 0xA)
                  (Direction.Down, 0xD)
                  (Direction.Right, 0xC) ])
-                 
           (0xC,
            Map [ (Direction.Up, 8)
                  (Direction.Left, 0xB)
@@ -136,7 +135,7 @@ let parseInput (s: string) =
     |> Seq.filter (fun x -> x.Length > 0)
 
 let makeGetKeyFun (keyMap: Map<int, Map<Direction,int>>) =
-    fun (s: string) (k: int) -> 
+    fun (s: string) (k: int) ->
         s.ToCharArray()
         |> Seq.map (fun c -> CharToDirection.[c])
         |> Seq.fold (fun a e -> keyMap.[a].[e]) k

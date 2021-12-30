@@ -7,7 +7,7 @@ from typing import NamedTuple
 
 from support import get_input_data
 
-regex = re.compile(r"(?P<name>(([a-z]+)\-)+)(?P<sector_id>\d+)\[(?P<checksum>[a-z]+)\]")
+regex = re.compile(r"(?P<name>(([a-z]+)-)+)(?P<sector_id>\d+)\[(?P<checksum>[a-z]+)]")
 
 
 def invert_counter(c: Counter[Hashable]) -> dict[int, set[Hashable]]:

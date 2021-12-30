@@ -38,5 +38,5 @@ You can imagine running any solution like so:
 
 ```sh
 ./run.sh python 2021 24  # defaults first (or only) variant
-./run.sh 2021 24  # defaults to a language 
+./run.sh 2021 24  # defaults to a language
 ```
