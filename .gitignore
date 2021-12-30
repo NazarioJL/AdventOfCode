@@ -1,3 +1,16 @@
-.config
+# idea
+.idea
+
+# fsharp
 .ionide
+
+# python
+*.egg-info
+*.pyc
 .env
+.mypy_cache
+.venv
+venv
+
+# misc
+.config
