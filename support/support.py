@@ -40,7 +40,7 @@ def get_input_data(year: int, day: int, relative_dir: str | None = None) -> str:
 
 
 def get_input(year: int, day: int) -> str:
-    with open("../.env") as f:
+    with open("./.env") as f:
         contents = f.read()
 
     url = f"https://adventofcode.com/{year}/day/{day}/input"
